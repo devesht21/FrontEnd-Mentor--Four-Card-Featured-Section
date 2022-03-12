@@ -21,6 +21,7 @@ body {
 main {
   min-height: 100vh;
   background-color: hsl(0, 0%, 98%);
+  padding: 2.4rem;
 }
 
 .header {
@@ -96,4 +97,31 @@ main {
 .svg-container {
   display: flex;
   justify-content: flex-end;
+}
+
+@media (max-width: 376px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    transform: translate(0, 0);
+  }
+
+  .card-supervisor {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .card-team {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .card-karma {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .card-calculator {
+    grid-row: 4;
+    grid-column: 1;
+  }
 }
